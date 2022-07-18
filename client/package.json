@@ -17,7 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://localhost:8080/",
+  "proxy": "https://api.websitecarbon.com/",
   
   "eslintConfig": {
     "extends": [
