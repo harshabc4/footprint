@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     getCarbon()
       .then((res) => {
-        console.log(res.json);
+        console.log(res);
         setWebsite(res);
       })
       .catch((err) => console.log(err));
