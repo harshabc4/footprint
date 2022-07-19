@@ -12,10 +12,7 @@ function App() {
 
   useEffect(() => {
     getCarbon()
-      .then((res) => {
-        console.log(res);
-        setWebsite(res);
-      })
+      .then((res) => console.log(res))
       .catch((err) => console.log(err));
   }, []);
 
