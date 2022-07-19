@@ -2,7 +2,8 @@ export const getCarbon = async () => {
   try {
     // const res = await fetch("site?url=google.com", {
     const res = await fetch(
-      "https://api.websitecarbon.com/site?url=google.com",
+      // "https://api.websitecarbon.com/site?url=google.com",
+      "http://waterservices.usgs.gov/nwis/iv/?countyCd=51087",
       {
         method: "GET",
         headers: {
