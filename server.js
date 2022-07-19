@@ -25,11 +25,11 @@ app.use(morgan("dev"));
 app.use(cors({ origin: true, credentials: true }));
 
 // routes
-// const testRoutes = require("./routes/test");
-// app.use("/", testRoutes);
+const testRoutes = require("./routes/test");
+app.use("/", testRoutes);
 
-// const carbonRoutes = require("./routes/carbon");
-// app.use("/", carbonRoutes);
+const carbonRoutes = require("./routes/carbon");
+app.use("/", carbonRoutes);
 
 // app.get("/carbon", (req, res) => {
 //   res.set("Access-Control-Allow-Origin", "*");
