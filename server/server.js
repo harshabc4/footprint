@@ -29,7 +29,7 @@ const testRoutes = require("./routes/test");
 app.use("/", testRoutes);
 
 const carbonRoutes = require("./routes/carbon");
-app.use("/carbon", carbonRoutes);
+app.use("/", carbonRoutes);
 
 // app.get("/carbon", (req, res) => {
 //   res.set("Access-Control-Allow-Origin", "*");
