@@ -14,10 +14,11 @@ function App() {
     getCarbon()
       .then((res) => {
         setWebsite(res);
-        console.log(res.stringify);
       })
       .catch((err) => console.log(err));
   }, []);
+
+  console.log(website);
 
   return (
     <div className="App">
