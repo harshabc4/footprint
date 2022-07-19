@@ -13,6 +13,7 @@ function App() {
   useEffect(() => {
     getCarbon()
       .then((res) => {
+        console.log(res);
         return setWebsite(res);
       })
       .catch((err) => console.log(err));
@@ -20,7 +21,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>{website.url}</h1>
       <h2>asdf</h2>
       <Main />
     </div>
