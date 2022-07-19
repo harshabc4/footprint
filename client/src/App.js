@@ -16,7 +16,7 @@ function App() {
         setWebsite(res);
         console.log(res);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err + "asdf"));
   }, []);
 
   return (
