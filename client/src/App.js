@@ -18,10 +18,9 @@ function App() {
       .catch((err) => console.log(err));
   }, []);
 
-  console.log(website);
-
   return (
     <div className="App">
+      <h1>{website}</h1>
       <h2>asdf</h2>
       <Main />
     </div>
