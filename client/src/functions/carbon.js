@@ -15,7 +15,7 @@ export const getCarbon = async () => {
         },
       }
     );
-    return await res.json();
+    return await res;
   } catch (err) {}
 };
 
