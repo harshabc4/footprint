@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const morgan = require("morgan");
 const cors = require("cors");
+const PORT = process.env.PORT || 8080;
 
 require("dotenv").config();
 
@@ -58,10 +59,7 @@ app.get("*", function (request, response) {
 
 // TEST END
 
-// port
-const port = process.env.PORT || 8080;
-
 // listener
-const server = app.listen(port, () =>
-  console.log(`Server is running on port ${port}`)
+const server = app.listen(PORT, () =>
+  console.log(`Server is running on port ${PORT}`)
 );
