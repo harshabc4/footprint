@@ -14,7 +14,7 @@ function App() {
     getCarbon()
       .then((res) => {
         setWebsite(res);
-        console.log(res.json());
+        console.log(res.stringify);
       })
       .catch((err) => console.log(err));
   }, []);
