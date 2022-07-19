@@ -2,7 +2,7 @@ export const getCarbon = async () => {
   try {
     // const res = await fetch("site?url=google.com", {
     const res = await fetch(
-      "https://cors-anywhere.herokuapp.com/https://api.websitecarbon.com/site?url=google.com",
+      "https://api.websitecarbon.com/site?url=google.com",
       {
         method: "GET",
         headers: {
