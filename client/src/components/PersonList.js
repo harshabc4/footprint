@@ -29,10 +29,13 @@ export default class PersonList extends React.Component {
   };
 
   componentDidMount() {
-    axios.get(`https://jsonplaceholder.typicode.com/users`).then((res) => {
-      const persons = res.data;
-      this.setState({ persons });
-    });
+    // axios.get(`https://jsonplaceholder.typicode.com/users`).then((res) => {
+    axios
+      .get(`https://api.websitecarbon.com/site?url=google.com`)
+      .then((res) => {
+        const persons = res.data;
+        this.setState({ persons });
+      });
   }
 
   render() {
