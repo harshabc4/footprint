@@ -11,19 +11,6 @@ const app = express();
 // db
 let dbName = "Footprint";
 
-// TEST START
-// Accessing the path module
-const path = require("path");
-
-// Step 1:
-app.use(express.static(path.resolve(__dirname, "./client/build")));
-// Step 2:
-app.get("*", function (request, response) {
-  response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
-});
-
-// TEST END
-
 mongoose
   .connect(process.env.DB_STRING, {
     useNewUrlParser: true,
@@ -57,6 +44,19 @@ app.use("/", carbonRoutes);
 //     })
 //     .catch(error => console.error(error))
 // })
+
+// TEST START
+// Accessing the path module
+const path = require("path");
+
+// Step 1:
+app.use(express.static(path.resolve(__dirname, "./client/build")));
+// Step 2:
+app.get("*", function (request, response) {
+  response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
+});
+
+// TEST END
 
 // port
 const port = process.env.PORT || 8080;
