@@ -37,6 +37,14 @@ app.use("/", carbonRoutes);
 //   res.send({ msg: "This has CORS enabled 🎈" });
 // });
 
+// app.get("/asdf", (request, response) => {
+//   fetch("https://pokeapi.co/api/v2/location-area/285")
+//     .then((data) => {
+//       return data.json;
+//     })
+//     .catch((error) => console.error(error));
+// });
+
 // app.get('/materials',(request, response)=>{
 //     // Sort array by amount
 //     db.collection('materials').find().sort({amount: -1}).toArray()

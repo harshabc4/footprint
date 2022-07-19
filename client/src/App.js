@@ -1,6 +1,7 @@
 import "./App.css";
 import Main from "./components/Main.js";
 import { useState, useEffect } from "react";
+import PersonList from "./components/PersonList.js";
 
 // functions
 // import { getTest } from "./functions/test";
@@ -23,6 +24,7 @@ function App() {
     <div className="App">
       <h2>asdf</h2>
       <Main />
+      <PersonList />
     </div>
   );
 }
