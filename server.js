@@ -5,6 +5,12 @@ const cors = require("cors");
 
 require("dotenv").config();
 
+// app
+const app = express();
+
+// db
+let dbName = "Footprint";
+
 // TEST START
 // Accessing the path module
 const path = require("path");
@@ -17,12 +23,6 @@ app.get("*", function (request, response) {
 });
 
 // TEST END
-
-// app
-const app = express();
-
-// db
-let dbName = "Footprint";
 
 mongoose
   .connect(process.env.DB_STRING, {
