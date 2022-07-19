@@ -20,7 +20,7 @@ function App() {
   // }, []);
 
   useEffect(() => {
-    fetch("/site?url=google.com")
+    fetch("https://api.websitecarbon.com/site?url=google.com")
       .then((res) => res.json())
       .then((data) => setWebsite(data));
   }, []);
