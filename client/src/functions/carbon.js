@@ -4,7 +4,6 @@ export const getCarbon = async () => {
     const res = await fetch(
       "https://api.websitecarbon.com/site?url=google.com",
       {
-        mode: "no-cors",
         method: "GET",
         headers: {
           Accept: "applicaton/json",
@@ -15,7 +14,7 @@ export const getCarbon = async () => {
         },
       }
     );
-    return await res;
+    return await res.json();
   } catch (err) {}
 };
 
