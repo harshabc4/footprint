@@ -8,7 +8,7 @@ export default class PersonList extends React.Component {
 
   componentDidMount() {
     axios
-      .get(`http://waterservices.usgs.gov/nwis/dv/?countyCd=51087&format=json`)
+      .get(`https://waterservices.usgs.gov/nwis/dv/?countyCd=51087&format=json`)
       .then((res) => {
         const persons = res.data;
         this.setState({ persons });

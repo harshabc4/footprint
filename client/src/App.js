@@ -5,20 +5,20 @@ import PersonList from "./components/PersonList.js";
 
 // functions
 // import { getTest } from "./functions/test";
-import { getCarbon } from "./functions/carbon";
+// import { getCarbon } from "./functions/carbon";
 
 function App() {
   // const [data, setData] = useState("Hello World!");
   const [website, setWebsite] = useState({});
 
-  useEffect(() => {
-    getCarbon()
-      .then((res) => {
-        console.log(res);
-        setWebsite(res);
-      })
-      .catch((err) => console.log(err));
-  }, []);
+  // useEffect(() => {
+  //   getCarbon()
+  //     .then((res) => {
+  //       console.log(res);
+  //       setWebsite(res);
+  //     })
+  //     .catch((err) => console.log(err));
+  // }, []);
 
   return (
     <div className="App">
