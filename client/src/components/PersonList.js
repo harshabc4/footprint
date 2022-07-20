@@ -16,7 +16,7 @@ export default class PersonList extends React.Component {
   }
 
   render() {
-    return <ul>[{this.state.persons}]</ul>;
+    return <ul>{this.state.persons.values.queryInfo.queryURL}</ul>;
   }
 }
 
